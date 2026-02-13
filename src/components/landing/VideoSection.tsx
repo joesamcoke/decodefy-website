@@ -33,7 +33,7 @@ const VideoSection = () =>
           </p>
           <p>
             <span className="text-foreground font-medium">Second question: "How long would this take to create in the real world?"</span>{" "}
-            Answer: 847 words of technical instructions — the kind only a trained copywriter would know how to write.
+            Answer: Experienced UK Tax writer would take 2.5 - 6 hours end-to-end.
           </p>
           <p>
             That's the problem with AI tools. To get expert output, you need to already be an expert in prompting, copywriting, and marketing psychology.
