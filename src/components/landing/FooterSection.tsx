@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/decodefy-logo.png";
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -70,14 +71,19 @@ const FooterSection = () => (
             <p>Your expertise, finally visible.</p>
             <p>Clients who trust you before you've spoken.</p>
           </div>
-          <p className="text-primary font-bold text-2xl tracking-widest mb-8">DECODEFY</p>
+          <img src={logo} alt="Decodefy" style={{ width: 120 }} className="mx-auto mb-8" />
           <div className="flex justify-center gap-4">
             <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent/10">Book a Demo</Button>
             <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">Book Your Session</Button>
           </div>
-          <p className="text-muted-foreground text-xs mt-8">
-            © {new Date().getFullYear()} Decodefy. All rights reserved.
-          </p>
+          <div className="flex justify-center items-center gap-4 mt-8">
+            <p className="text-muted-foreground text-xs">
+              © {new Date().getFullYear()} Decodefy. All rights reserved.
+            </p>
+            <a href="https://legal.decodefy.ai" target="_blank" rel="noopener noreferrer" className="text-muted-foreground text-xs hover:text-foreground transition-colors underline">
+              Legal
+            </a>
+          </div>
         </motion.div>
       </div>
     </footer>
