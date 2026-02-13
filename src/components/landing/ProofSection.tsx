@@ -8,6 +8,24 @@ const fadeIn = {
   transition: { duration: 0.6 },
 };
 
+const testimonials = [
+  {
+    quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
+    name: "Business Owner",
+    industry: "Professional Services",
+  },
+  {
+    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
+    name: "Business Owner",
+    industry: "Consulting",
+  },
+  {
+    quote: "\"When I saw MY phrase in Decodefy, I thought 'how the hell does it know me so well already?'\"",
+    name: "Business Owner",
+    industry: "Financial Services",
+  },
+];
+
 const ProofSection = () => (
   <>
     <section className="section-padding bg-card/50">
@@ -32,7 +50,7 @@ const ProofSection = () => (
 
     <section className="section-padding">
       <div className="section-container">
-        <motion.div {...fadeIn} className="text-center mb-12">
+        <motion.div {...fadeIn} className="text-center mb-16">
           <h2 className="section-headline">
             Don't Take <span className="text-primary">Our Word For It</span>
           </h2>
@@ -40,21 +58,44 @@ const ProofSection = () => (
             Three business owners. Three different industries. Same result: more content, less time, clients who see them as the expert.
           </p>
         </motion.div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[1, 2, 3].map((i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.15 }}
-              className="aspect-video bg-card rounded-xl border border-border flex items-center justify-center cursor-pointer group"
-            >
-              <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                <Play className="w-6 h-6 text-primary ml-0.5" />
-              </div>
-            </motion.div>
-          ))}
+
+        <div className="space-y-20">
+          {testimonials.map((t, i) => {
+            const isReversed = i % 2 !== 0;
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-8 items-center`}
+              >
+                {/* Video placeholder */}
+                <div className="w-full md:w-1/2">
+                  <div className="aspect-video bg-card rounded-2xl border border-border flex items-center justify-center cursor-pointer group relative overflow-hidden">
+                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <Play className="w-6 h-6 text-primary ml-0.5" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Text side */}
+                <div className="w-full md:w-1/2 space-y-4">
+                  <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                    Real <span className="text-primary">Results.</span>
+                  </h3>
+                  <p className="text-xs text-muted-foreground uppercase tracking-widest">
+                    {t.industry}
+                  </p>
+                  <blockquote className="text-xl md:text-2xl font-semibold text-foreground leading-snug border-l-4 border-accent pl-5 py-2">
+                    {t.quote}
+                  </blockquote>
+                  <p className="text-muted-foreground text-sm">{t.name}</p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
