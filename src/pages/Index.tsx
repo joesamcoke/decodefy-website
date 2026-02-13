@@ -12,7 +12,7 @@ import FAQSection from "@/components/landing/FAQSection";
 import FooterSection from "@/components/landing/FooterSection";
 
 const Index = () => (
-  <div className="min-h-screen bg-background text-foreground">
+  <div className="min-h-screen teal-gradient-bg text-foreground">
     <Navbar />
     <HeroSection />
     <VideoSection />

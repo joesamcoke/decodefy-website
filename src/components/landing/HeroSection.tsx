@@ -37,7 +37,7 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.4 }}
         className="mt-10"
       >
-        <Button size="lg" className="text-base md:text-lg px-8 h-14 gap-2">
+        <Button size="lg" className="text-base md:text-lg px-8 h-14 gap-2 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
           <Play className="w-5 h-5" />
           Watch How It Works (3 min)
         </Button>
