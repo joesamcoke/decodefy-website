@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { Shield, Play } from "lucide-react";
+import testimonialProfessional from "@/assets/testimonial-professional-services.jpg";
+import testimonialConsulting from "@/assets/testimonial-consulting.jpg";
+import testimonialFinancial from "@/assets/testimonial-financial-services.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -13,16 +16,19 @@ const testimonials = [
     quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
     name: "Business Owner",
     industry: "Professional Services",
+    image: testimonialProfessional,
   },
   {
     quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
     name: "Business Owner",
     industry: "Consulting",
+    image: testimonialConsulting,
   },
   {
     quote: "\"When I saw MY phrase in Decodefy, I thought 'how the hell does it know me so well already?'\"",
     name: "Business Owner",
     industry: "Financial Services",
+    image: testimonialFinancial,
   },
 ];
 
@@ -71,12 +77,10 @@ const ProofSection = () => (
                 transition={{ duration: 0.6, delay: 0.1 }}
                 className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-8 items-center`}
               >
-                {/* Video placeholder */}
+                {/* Video thumbnail */}
                 <div className="w-full md:w-1/2">
-                  <div className="aspect-video bg-card rounded-2xl border border-border flex items-center justify-center cursor-pointer group relative overflow-hidden">
-                    <div className="w-16 h-16 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <Play className="w-6 h-6 text-primary ml-0.5" />
-                    </div>
+                  <div className="aspect-video rounded-2xl border border-border overflow-hidden">
+                    <img src={t.image} alt={`${t.industry} testimonial`} className="w-full h-full object-cover" />
                   </div>
                 </div>
 
