@@ -14,7 +14,7 @@ const fadeIn = {
 const testimonials = [
   {
     quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
-    name: "Business Owner",
+    name: "Nick Gibbons, Founder in Crypto & Web3 Blockchain",
     industry: "FOUNDER'S SECRET WEAPON",
     image: testimonialProfessional,
     video: "https://vid.cdn-website.com/47bb3514/videos/uLpw0bwaSfmGHUdFifxI_Decodefy+Review+Nick+Gibbons-v.mp4",
