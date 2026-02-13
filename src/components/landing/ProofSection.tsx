@@ -22,7 +22,7 @@ const testimonials = [
   {
     quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
     name: "Business Owner",
-    industry: "Consulting",
+    industry: "FROM ChatGPT FAN TO \"DUMBFOUNDED\"",
     image: testimonialConsulting,
     video: "https://vid.cdn-website.com/47bb3514/videos/oeCHqwWWSTqf1nqR2sYk_Clip_Dani+Humphreys+-+DriveByMedia+-+Master+Brand+Compass+Session+highlights-v.mp4",
   },
