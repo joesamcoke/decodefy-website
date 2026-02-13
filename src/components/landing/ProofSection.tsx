@@ -29,7 +29,7 @@ const testimonials = [
   {
     quote: "\"When I saw MY phrase in Decodefy, I thought 'how the hell does it know me so well already?'\"",
     name: "Business Owner",
-    industry: "Financial Services",
+    industry: "THE VOICE RECOGNITION THAT CHANGES EVERYTHING",
     image: testimonialFinancial,
     video: "https://vid.cdn-website.com/47bb3514/videos/IDjpTDWDQcm2cfXnehvw_FM_Stuart-wright-testimonial-decodefy-fnl-v.mp4",
   },
