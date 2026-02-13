@@ -5,11 +5,11 @@ const fadeIn = {
   initial: { opacity: 0, y: 24 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true },
-  transition: { duration: 0.6 },
+  transition: { duration: 0.6 }
 };
 
-const VideoSection = () => (
-  <section id="video-section" className="section-padding">
+const VideoSection = () =>
+<section id="video-section" className="section-padding">
     <div className="section-container">
       <motion.div {...fadeIn}>
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-2">
@@ -19,20 +19,20 @@ const VideoSection = () => (
 
         <div className="aspect-video rounded-xl border border-border overflow-hidden mb-10">
           <video
-            src="/videos/DECODEFY_4_MINUTE_DEMO-optimised.mp4"
-            controls
-            preload="metadata"
-            className="w-full h-full object-cover"
-          />
+          src="/videos/DECODEFY_4_MINUTE_DEMO-optimised.mp4"
+          controls
+          preload="metadata"
+          className="w-full h-full object-cover" />
+
         </div>
 
         <div className="space-y-6 text-muted-foreground text-lg">
           <p>
-            <span className="text-foreground font-medium">First question: "Rate this content for human quality."</span>{" "}
+            <span className="text-foreground font-medium">First question: "What level of copywriter wrote this."</span>{" "}
             Answer: Very high. Professional. Psychologically sophisticated.
           </p>
           <p>
-            <span className="text-foreground font-medium">Second question: "What prompt would recreate this?"</span>{" "}
+            <span className="text-foreground font-medium">Second question: "How long would this take to create in the real world?"</span>{" "}
             Answer: 847 words of technical instructions — the kind only a trained copywriter would know how to write.
           </p>
           <p>
@@ -45,7 +45,7 @@ const VideoSection = () => (
         </div>
       </motion.div>
     </div>
-  </section>
-);
+  </section>;
+
 
 export default VideoSection;
