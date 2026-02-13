@@ -37,9 +37,13 @@ const HeroSection = () => (
         transition={{ duration: 0.8, delay: 0.4 }}
         className="mt-10"
       >
-        <Button size="lg" className="text-base md:text-lg px-8 h-14 gap-2 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
+        <Button
+          size="lg"
+          className="text-base md:text-lg px-8 h-14 gap-2 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
+          onClick={() => document.getElementById('video-section')?.scrollIntoView({ behavior: 'smooth' })}
+        >
           <Play className="w-5 h-5" />
-          Watch How It Works (3 min)
+          Watch How It Works (4 min)
         </Button>
         <p className="mt-6 text-sm text-muted-foreground max-w-md mx-auto">
           More usable content in your first session than a copywriter delivers in a month — or your money back.

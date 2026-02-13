@@ -9,7 +9,7 @@ const fadeIn = {
 };
 
 const VideoSection = () => (
-  <section className="section-padding">
+  <section id="video-section" className="section-padding">
     <div className="section-container">
       <motion.div {...fadeIn}>
         <p className="text-center text-lg md:text-xl text-muted-foreground mb-2">
@@ -19,7 +19,7 @@ const VideoSection = () => (
 
         <div className="aspect-video rounded-xl border border-border overflow-hidden mb-10">
           <video
-            src="/videos/Decodefy_proof_Max_intro.mp4"
+            src="/videos/DECODEFY_4_MINUTE_DEMO-optimised.mp4"
             controls
             preload="metadata"
             className="w-full h-full object-cover"
