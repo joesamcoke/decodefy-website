@@ -1,8 +1,11 @@
 
 
-## Update Video Section Quote Answer
+## Update "2 Years" References to "3+ Years"
 
-**Change:** In the VideoSection component, update the answer to the first question from "Very high. Professional. Psychologically sophisticated." to "Senior Copywriter/Content strategist with tax-domain fluency."
+Two changes needed in `src/components/landing/TeamSection.tsx`:
 
-**File:** `src/components/landing/VideoSection.tsx` (line ~37)
+1. **Section heading (line 40):** Change "Two Years To Build This." to "3+ Years To Build This."
+2. **Jon's bio paragraph (line 16):** Change "He spent two years figuring out..." to "He spent 3+ years figuring out..."
+
+No other files contain "2 years" references.
 
