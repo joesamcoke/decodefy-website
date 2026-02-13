@@ -13,7 +13,7 @@ const team = [
     role: "The Lazy One",
     paras: [
       "Twenty years helping local businesses. Built Decodefy because he got tired of watching brilliant people lose to louder competitors — and because he's lazy enough to believe there had to be a shortcut.",
-      "He spent two years figuring out how expert communicators actually think. Then he found a way to programme it into a system anyone can use. Turns out there was a shortcut. This is it.",
+      "He spent 3+ years figuring out how expert communicators actually think. Then he found a way to programme it into a system anyone can use. Turns out there was a shortcut. This is it.",
     ],
   },
   {
@@ -37,7 +37,7 @@ const TeamSection = () => (
     <div className="section-container">
       <motion.div {...fadeIn} className="text-center mb-12">
         <h2 className="section-headline">
-          Three People. Two Years To Build This.{" "}
+          Three People. 3+ Years To Build This.{" "}
           <span className="text-primary">One Mission.</span>
         </h2>
       </motion.div>
