@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Shield, Play } from "lucide-react";
+import { Shield } from "lucide-react";
 import testimonialProfessional from "@/assets/testimonial-professional-services.jpg";
 import testimonialConsulting from "@/assets/testimonial-consulting.jpg";
 import testimonialFinancial from "@/assets/testimonial-financial-services.jpg";
@@ -17,18 +17,21 @@ const testimonials = [
     name: "Business Owner",
     industry: "Professional Services",
     image: testimonialProfessional,
+    video: "https://vid.cdn-website.com/47bb3514/videos/uLpw0bwaSfmGHUdFifxI_Decodefy+Review+Nick+Gibbons-v.mp4",
   },
   {
     quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
     name: "Business Owner",
     industry: "Consulting",
     image: testimonialConsulting,
+    video: "https://vid.cdn-website.com/47bb3514/videos/oeCHqwWWSTqf1nqR2sYk_Clip_Dani+Humphreys+-+DriveByMedia+-+Master+Brand+Compass+Session+highlights-v.mp4",
   },
   {
     quote: "\"When I saw MY phrase in Decodefy, I thought 'how the hell does it know me so well already?'\"",
     name: "Business Owner",
     industry: "Financial Services",
     image: testimonialFinancial,
+    video: "https://vid.cdn-website.com/47bb3514/videos/IDjpTDWDQcm2cfXnehvw_FM_Stuart-wright-testimonial-decodefy-fnl-v.mp4",
   },
 ];
 
@@ -80,7 +83,13 @@ const ProofSection = () => (
                 {/* Video thumbnail */}
                 <div className="w-full md:w-1/2">
                   <div className="aspect-video rounded-2xl border border-border overflow-hidden">
-                    <img src={t.image} alt={`${t.industry} testimonial`} className="w-full h-full object-cover" />
+                    <video
+                      src={t.video}
+                      poster={t.image}
+                      controls
+                      preload="metadata"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
 
