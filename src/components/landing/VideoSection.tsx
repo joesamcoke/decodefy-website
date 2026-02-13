@@ -28,7 +28,8 @@ const VideoSection = () =>
 
         <div className="space-y-6 text-muted-foreground text-lg">
           <p>
-            Senior copywriter/content strategist with tax-domain fluency.
+            <span className="text-foreground font-medium">First question: "What level of copywriter wrote this."</span>{" "}
+            Answer: Very high. Professional. Psychologically sophisticated.
           </p>
           <p>
             <span className="text-foreground font-medium">Second question: "How long would this take to create in the real world?"</span>{" "}
