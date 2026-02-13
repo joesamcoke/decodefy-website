@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Play } from "lucide-react";
+
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -17,10 +17,13 @@ const VideoSection = () => (
         </p>
         <p className="text-center text-foreground font-medium mb-10">The video shows both.</p>
 
-        <div className="aspect-video bg-card rounded-xl border border-border flex items-center justify-center cursor-pointer group relative overflow-hidden mb-10">
-          <div className="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-            <Play className="w-8 h-8 text-primary ml-1" />
-          </div>
+        <div className="aspect-video rounded-xl border border-border overflow-hidden mb-10">
+          <video
+            src="/videos/Decodefy_proof_Max_intro.mp4"
+            controls
+            preload="metadata"
+            className="w-full h-full object-cover"
+          />
         </div>
 
         <div className="space-y-6 text-muted-foreground text-lg">
