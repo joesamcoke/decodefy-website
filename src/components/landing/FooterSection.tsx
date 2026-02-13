@@ -30,7 +30,7 @@ const FooterSection = () => (
               Fifteen minutes. We'll show you real content created in Decodefy, explain what happens in a Master Brand Compass session, and answer whatever you're wondering.
             </p>
             <p className="text-muted-foreground text-sm mb-6">No pitch. No pressure. Just clarity.</p>
-            <Button variant="outline" size="lg" className="w-full h-12">
+            <Button variant="outline" size="lg" className="w-full h-12 rounded-full border-accent text-accent hover:bg-accent/10">
               Book a 15-Minute Demo
             </Button>
           </motion.div>
@@ -48,7 +48,7 @@ const FooterSection = () => (
             <p className="text-muted-foreground text-sm mb-6">
               More usable content in your first session than a copywriter delivers in a month — or your money back.
             </p>
-            <Button size="lg" className="w-full h-12">
+            <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
               Book Your Session — £495
             </Button>
           </motion.div>
@@ -72,8 +72,8 @@ const FooterSection = () => (
           </div>
           <p className="text-primary font-bold text-2xl tracking-widest mb-8">DECODEFY</p>
           <div className="flex justify-center gap-4">
-            <Button variant="outline" size="sm">Book a Demo</Button>
-            <Button size="sm">Book Your Session</Button>
+            <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent/10">Book a Demo</Button>
+            <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">Book Your Session</Button>
           </div>
           <p className="text-muted-foreground text-xs mt-8">
             © {new Date().getFullYear()} Decodefy. All rights reserved.

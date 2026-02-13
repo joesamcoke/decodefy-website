@@ -44,7 +44,7 @@ const PricingSection = () => (
             </div>
           ))}
         </div>
-        <Button size="lg" className="w-full h-14 text-base">
+        <Button size="lg" className="w-full h-14 text-base bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
           Book Your Session — £495
         </Button>
       </motion.div>
