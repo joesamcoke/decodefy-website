@@ -6,6 +6,9 @@ import logo from "@/assets/decodefy-logo.png";
 import testimonialProfessional from "@/assets/testimonial-professional-services.jpg";
 import testimonialConsulting from "@/assets/testimonial-consulting.jpg";
 import testimonialFinancial from "@/assets/testimonial-financial-services.jpg";
+import mattImage from "@/assets/matt-steadman.jpg";
+import catherineImage from "@/assets/catherine-lemon-cherry.jpg";
+import willImage from "@/assets/will-barker.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -186,8 +189,8 @@ const MattStory = () => (
         </h2>
         <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image placeholder */}
-          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl border-2 border-dashed border-border bg-muted/30 flex items-center justify-center">
-            <p className="text-muted-foreground text-sm">Matt Steadman — Image</p>
+          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden">
+            <img src={mattImage} alt="Matt Steadman" className="w-full h-full object-cover rounded-2xl" />
           </div>
           <div className="w-full md:w-3/5 space-y-4 text-lg text-muted-foreground">
             <p>Matt Steadman runs a Yorkshire refrigeration business. Brilliant engineer. £200,000 in unfollowed quotes.</p>
@@ -315,8 +318,8 @@ const CatherineStory = () => (
         </h2>
         <div className="flex flex-col md:flex-row-reverse gap-10 items-start">
           {/* Image placeholder */}
-          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl border-2 border-dashed border-border bg-muted/30 flex items-center justify-center">
-            <p className="text-muted-foreground text-sm">Catherine — Image</p>
+          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden">
+            <img src={catherineImage} alt="Catherine" className="w-full h-full object-cover rounded-2xl" />
           </div>
           <div className="w-full md:w-3/5 space-y-4 text-lg text-muted-foreground">
             <p>Catherine runs a drug and alcohol testing company in Beverley. September 22nd, her phone rings.</p>
@@ -346,11 +349,14 @@ const ClientsCreateSection = () => (
         <p className="text-lg text-muted-foreground mb-6">Blog posts. Social media. Proposals. Grant applications. High-stakes presentations.</p>
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            { name: "Matt", result: "Follow-ups that closed a £6,000 deal in his first week." },
-            { name: "Catherine", result: "Grant applications under impossible deadlines." },
-            { name: "Will", result: "Blog posts and social content. Dyslexic. Avoided writing for years." },
+            { name: "Matt", result: "Follow-ups that closed a £6,000 deal in his first week.", image: mattImage },
+            { name: "Catherine", result: "Grant applications under impossible deadlines.", image: catherineImage },
+            { name: "Will", result: "Blog posts and social content. Dyslexic. Avoided writing for years.", image: willImage },
           ].map((c) => (
-            <div key={c.name} className="p-6 rounded-2xl bg-background border border-border">
+            <div key={c.name} className="p-6 rounded-2xl bg-background border border-border flex flex-col items-center text-center">
+              <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
+                <img src={c.image} alt={c.name} className="w-full h-full object-cover" />
+              </div>
               <p className="text-foreground font-bold text-lg mb-2">{c.name}</p>
               <p className="text-muted-foreground">{c.result}</p>
             </div>
@@ -372,8 +378,8 @@ const WillStory = () => (
         </h2>
         <div className="flex flex-col md:flex-row gap-10 items-start">
           {/* Image placeholder */}
-          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl border-2 border-dashed border-border bg-muted/30 flex items-center justify-center">
-            <p className="text-muted-foreground text-sm">Will Barker — Image</p>
+          <div className="w-full md:w-2/5 aspect-[4/3] rounded-2xl overflow-hidden">
+            <img src={willImage} alt="Will Barker" className="w-full h-full object-cover rounded-2xl" />
           </div>
           <div className="w-full md:w-3/5 space-y-4 text-lg text-muted-foreground">
             <p>Will Barker runs Kiplin Lodge Park in the Yorkshire Dales. Dyslexic. Writing was his enemy.</p>
