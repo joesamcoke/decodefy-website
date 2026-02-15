@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Play, Shield, Check, Users, Zap, BookOpen, HeadphonesIcon, Sparkles } from "lucide-react";
+import { Play, Shield, Check, Users, Zap, BookOpen, HeadphonesIcon, Sparkles, User } from "lucide-react";
 import Navbar from "@/components/landing/Navbar";
 import logo from "@/assets/decodefy-logo.png";
+import testimonialProfessional from "@/assets/testimonial-professional-services.jpg";
+import testimonialConsulting from "@/assets/testimonial-consulting.jpg";
+import testimonialFinancial from "@/assets/testimonial-financial-services.jpg";
 
 const fadeIn = {
   initial: { opacity: 0, y: 24 },
@@ -90,6 +93,84 @@ const VideoB = () => (
           <p className="text-foreground font-medium">Decodefy: Less than a minute.</p>
         </div>
       </motion.div>
+    </div>
+  </section>
+);
+
+/* ───────────── VIDEO TESTIMONIALS ───────────── */
+const testimonialsB = [
+  {
+    quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
+    name: "Nick Gibbons, Founder in Crypto & Web3 Blockchain",
+    industry: "FOUNDER'S SECRET WEAPON",
+    image: testimonialProfessional,
+    video: "https://vid.cdn-website.com/47bb3514/videos/uLpw0bwaSfmGHUdFifxI_Decodefy+Review+Nick+Gibbons-v.mp4",
+  },
+  {
+    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
+    name: "Dani Humphreys, Drive By Media",
+    industry: "FROM ChatGPT FAN TO \"DUMBFOUNDED\"",
+    image: testimonialConsulting,
+    video: "https://vid.cdn-website.com/47bb3514/videos/oeCHqwWWSTqf1nqR2sYk_Clip_Dani+Humphreys+-+DriveByMedia+-+Master+Brand+Compass+Session+highlights-v.mp4",
+  },
+  {
+    quote: "\"When I saw MY phrase in Decodefy, I thought 'how the hell does it know me so well already?'\"",
+    name: "Stuart Wright, ActionCOACH",
+    industry: "THE VOICE RECOGNITION THAT CHANGES EVERYTHING",
+    image: testimonialFinancial,
+    video: "https://vid.cdn-website.com/47bb3514/videos/IDjpTDWDQcm2cfXnehvw_FM_Stuart-wright-testimonial-decodefy-fnl-v.mp4",
+  },
+];
+
+const TestimonialsB = () => (
+  <section className="section-padding">
+    <div className="section-container">
+      <motion.div {...fadeIn} className="text-center mb-16">
+        <h2 className="section-headline">
+          Don't Take <span className="text-primary">Our Word For It</span>
+        </h2>
+        <p className="text-lg text-muted-foreground">
+          Three business owners. Three different industries. Same result.
+        </p>
+      </motion.div>
+
+      <div className="space-y-20">
+        {testimonialsB.map((t, i) => {
+          const isReversed = i % 2 !== 0;
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className={`flex flex-col ${isReversed ? "md:flex-row-reverse" : "md:flex-row"} gap-8 items-center`}
+            >
+              <div className="w-full md:w-1/2">
+                <div className="aspect-video rounded-2xl border border-border overflow-hidden">
+                  <video
+                    src={t.video}
+                    poster={t.image}
+                    controls
+                    preload="metadata"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 space-y-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+                  Real <span className="text-primary">Results.</span>
+                </h3>
+                <p className="text-xs text-muted-foreground uppercase tracking-widest">{t.industry}</p>
+                <blockquote className="text-xl md:text-2xl font-semibold text-foreground leading-snug border-l-4 border-accent pl-5 py-2">
+                  {t.quote}
+                </blockquote>
+                <p className="text-muted-foreground text-sm">{t.name}</p>
+              </div>
+            </motion.div>
+          );
+        })}
+      </div>
     </div>
   </section>
 );
@@ -442,31 +523,45 @@ const WhatYouGet = () => (
 );
 
 /* ───────────── TEAM ───────────── */
+const teamMembers = [
+  {
+    name: "Jon Young",
+    desc: "Asked 100+ business owners the same question: \"You're brilliant at this. Why doesn't your website show that?\" He spent three years figuring out how expert communicators think. Then found someone who could programme it.",
+  },
+  {
+    name: "James Cooke",
+    desc: "Spent twenty years building systems for BT, NatWest, BP. When Jon explained the problem, James said: \"That's not a prompting problem. That's an architecture problem.\" Took eighteen months to build what you use in minutes.",
+  },
+  {
+    name: "Julie Gibson",
+    desc: "Realised after training fifty clients: great technology without support is expensive frustration. She's why clients succeed. Not just training — ongoing help when you're stuck.",
+  },
+];
+
 const TeamB = () => (
   <section className="section-padding bg-card/50">
     <div className="section-container">
       <motion.div {...fadeIn}>
-        <h2 className="section-headline">
+        <h2 className="section-headline text-center">
           Who <span className="text-primary">Built This</span>
         </h2>
-        <div className="space-y-10 text-lg text-muted-foreground">
-          <div>
-            <p className="text-foreground font-bold text-xl mb-2">Jon Young</p>
-            <p>Asked 100+ business owners the same question: "You're brilliant at this. Why doesn't your website show that?"</p>
-            <p className="mt-2">The pattern was always the same. Nobody had captured how they actually think.</p>
-            <p className="mt-2">He spent three years figuring out how expert communicators think. Then found someone who could programme it.</p>
-          </div>
-          <div>
-            <p className="text-foreground font-bold text-xl mb-2">James Cooke</p>
-            <p>Spent twenty years building systems for BT, NatWest, BP.</p>
-            <p className="mt-2">When Jon explained the problem, James said: "That's not a prompting problem. That's an architecture problem."</p>
-            <p className="mt-2">Took eighteen months to build what you use in minutes.</p>
-          </div>
-          <div>
-            <p className="text-foreground font-bold text-xl mb-2">Julie Gibson</p>
-            <p>Realised after training fifty clients: great technology without support is expensive frustration.</p>
-            <p className="mt-2">She's why clients succeed. Not just training — ongoing help when you're stuck.</p>
-          </div>
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
+          {teamMembers.map((m, i) => (
+            <motion.div
+              key={m.name}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.15 }}
+              className="p-6 rounded-2xl bg-background border border-border text-center"
+            >
+              <div className="w-24 h-24 rounded-full border-2 border-dashed border-border bg-muted/30 flex items-center justify-center mx-auto mb-4">
+                <User className="w-10 h-10 text-muted-foreground" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-1">{m.name}</h3>
+              <p className="text-muted-foreground text-sm">{m.desc}</p>
+            </motion.div>
+          ))}
         </div>
       </motion.div>
     </div>
@@ -623,6 +718,7 @@ const IndexB = () => (
     <Navbar />
     <HeroB />
     <VideoB />
+    <TestimonialsB />
     <MattStory />
     <ProblemB />
     <CompassSection />
