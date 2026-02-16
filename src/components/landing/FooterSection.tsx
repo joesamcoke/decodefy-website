@@ -58,7 +58,7 @@ const FooterSection = () => (
               Book your Master Brand Compass session with Jon. One hour. Your expertise captured. Your system built within days.
             </p>
             <p className="text-muted-foreground text-sm mb-6">
-              More usable content in your first session than a copywriter delivers in a month — or your money back.
+              More usable content in your first session than a copywriter delivers in a month - or your money back.
             </p>
         <Button
           asChild

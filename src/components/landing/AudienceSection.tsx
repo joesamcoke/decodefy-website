@@ -12,9 +12,9 @@ const professions = [
   "Accountants who give brilliant advice but whose website sounds like every other accountant.",
   "Solicitors who know their stuff but can't prove it until they're in the room.",
   "Consultants who solve real problems but whose proposals don't show why they're different.",
-  "Coaches who need this for their clients too — because knowing the strategy means nothing if they can't create the content to execute it.",
+  "Coaches who need this for their clients too - because knowing the strategy means nothing if they can't create the content to execute it.",
   "Trades who do exceptional work but whose online presence doesn't match.",
-  "Therapists, architects, recruiters, financial advisers — anyone who's better than their content currently suggests.",
+  "Therapists, architects, recruiters, financial advisers - anyone who's better than their content currently suggests.",
 ];
 
 const AudienceSection = () => (
@@ -33,7 +33,7 @@ const AudienceSection = () => (
           </div>
           <div className="text-lg text-muted-foreground space-y-4 text-left max-w-2xl mx-auto">
             <p>Shower. 2am. Sunday morning. Stuck in traffic.</p>
-            <p>That's when the good stuff shows up — the insight you've been trying to articulate, the post that would actually land.</p>
+            <p>That's when the good stuff shows up - the insight you've been trying to articulate, the post that would actually land.</p>
             <p>Decodefy's there when you are. Phone, tablet, laptop. Capture it before it disappears. Turn it into something usable before you've finished your coffee.</p>
             <p className="text-foreground font-medium">Your expertise doesn't clock off. Neither does this.</p>
           </div>

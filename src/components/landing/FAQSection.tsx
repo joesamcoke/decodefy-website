@@ -16,11 +16,11 @@ const fadeIn = {
 const faqs = [
   {
     q: "\"I've tried AI tools before. They all sound robotic.\"",
-    a: "Because they copy how humans write. We programmed how expert communicators think. Different approach, different result. Watch the video — ChatGPT itself rates the output as very high human quality.",
+    a: "Because they copy how humans write. We programmed how expert communicators think. Different approach, different result. Watch the video - ChatGPT itself rates the output as very high human quality.",
   },
   {
     q: "\"I'm not technical.\"",
-    a: "Neither are most of our clients. Accountants, solicitors, tradespeople — not tech people. If you can have a conversation and type a sentence, you can use this. Julie makes sure of it.",
+    a: "Neither are most of our clients. Accountants, solicitors, tradespeople - not tech people. If you can have a conversation and type a sentence, you can use this. Julie makes sure of it.",
   },
   {
     q: "\"What if it doesn't sound like me?\"",
@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "\"How is this different from ChatGPT?\"",
-    a: "ChatGPT needs expert prompts to get expert output. We showed it content from Decodefy and asked what prompt would recreate it — 847 words of technical instructions. Decodefy means you don't need to know any of that. Just tell it what you want in plain English.",
+    a: "ChatGPT needs expert prompts to get expert output. We showed it content from Decodefy and asked what prompt would recreate it - 847 words of technical instructions. Decodefy means you don't need to know any of that. Just tell it what you want in plain English.",
   },
   {
     q: "\"I never know what to write about.\"",

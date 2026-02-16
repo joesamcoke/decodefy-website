@@ -13,8 +13,8 @@ const features = [
   { icon: Zap, title: "The Decodefy System", paras: ["Create any type of content. Emails, proposals, social posts, website copy, blogs, documents for your team. One system does all of it.", "Just tell it what you need. \"Make this warmer.\" \"More formal.\" \"Tone it down a bit.\" It knows what you mean."] },
   { icon: LayoutDashboard, title: "Content Management", paras: ["Everything you create is saved. Edit anytime. A simple board lets you drag content from draft through to published. See what's done, what's waiting, what needs a polish."] },
   { icon: Brain, title: "Built-In Smarts", paras: ["Need to research something? It searches the web. Want to reference a webpage? Drop in the link. Following industry news? It finds recent stories and weaves them in."] },
-  { icon: Headphones, title: "Julie's Support", paras: ["You're not left alone with technology. When you're stuck, when you're unsure, when you need a hand — Julie's there. Proper help from a real person."] },
-  { icon: Rocket, title: "Everything That Comes Next", paras: ["New features, new tools, new integrations — included as they launch. Your price stays the same."] },
+  { icon: Headphones, title: "Julie's Support", paras: ["You're not left alone with technology. When you're stuck, when you're unsure, when you need a hand - Julie's there. Proper help from a real person."] },
+  { icon: Rocket, title: "Everything That Comes Next", paras: ["New features, new tools, new integrations - included as they launch. Your price stays the same."] },
 ];
 
 const IncludedSection = () => (

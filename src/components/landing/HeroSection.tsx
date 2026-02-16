@@ -25,7 +25,7 @@ const HeroSection = () => (
           You've tried ChatGPT. Robotic output. Complicated prompts. Content that sounds like everyone else.
         </p>
         <p className="text-lg md:text-xl text-muted-foreground">
-          Meanwhile, your actual expertise — the stuff that would make clients trust you — stays stuck in your head.
+          Meanwhile, your actual expertise - the stuff that would make clients trust you - stays stuck in your head.
         </p>
         <p className="text-xl md:text-2xl font-semibold text-foreground pt-4">
           One conversation with us fixes both.
@@ -46,7 +46,7 @@ const HeroSection = () => (
           Watch How It Works (4 min)
         </Button>
         <p className="mt-6 text-sm text-muted-foreground max-w-md mx-auto">
-          More usable content in your first session than a copywriter delivers in a month — or your money back.
+          More usable content in your first session than a copywriter delivers in a month - or your money back.
         </p>
       </motion.div>
     </div>

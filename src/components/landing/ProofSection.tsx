@@ -13,14 +13,14 @@ const fadeIn = {
 
 const testimonials = [
   {
-    quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
+    quote: "\"I almost didn't want to record this - Decodefy is my secret weapon.\"",
     name: "Nick Gibbons, Founder in Crypto & Web3 Blockchain",
     industry: "FOUNDER'S SECRET WEAPON",
     image: testimonialProfessional,
     video: "https://vid.cdn-website.com/47bb3514/videos/uLpw0bwaSfmGHUdFifxI_Decodefy+Review+Nick+Gibbons-v.mp4",
   },
   {
-    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
+    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy - I'm dumbfounded.\"",
     name: "Dani Humphreys, Drive By Media",
     industry: "FROM ChatGPT FAN TO \"DUMBFOUNDED\"",
     image: testimonialConsulting,

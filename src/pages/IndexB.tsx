@@ -41,7 +41,7 @@ const HeroB = () => (
           "I tried ChatGPT. Spent two hours wrestling with prompts. The output looked professional until I actually read it. Nobody would believe I wrote that."
         </p>
         <p className="text-lg md:text-xl text-muted-foreground">
-          You've got years of expertise. Real knowledge that would make clients choose you instantly — if they could see it.
+          You've got years of expertise. Real knowledge that would make clients choose you instantly - if they could see it.
         </p>
         <p className="text-lg md:text-xl text-muted-foreground">
           Getting it out of your head and into content that sounds like you? That's where everything falls apart.
@@ -103,14 +103,14 @@ const VideoB = () => (
 /* ───────────── VIDEO TESTIMONIALS ───────────── */
 const testimonialsB = [
   {
-    quote: "\"I almost didn't want to record this — Decodefy is my secret weapon.\"",
+    quote: "\"I almost didn't want to record this - Decodefy is my secret weapon.\"",
     name: "Nick Gibbons, Founder in Crypto & Web3 Blockchain",
     industry: "FOUNDER'S SECRET WEAPON",
     image: testimonialProfessional,
     video: "https://vid.cdn-website.com/47bb3514/videos/uLpw0bwaSfmGHUdFifxI_Decodefy+Review+Nick+Gibbons-v.mp4",
   },
   {
-    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy — I'm dumbfounded.\"",
+    quote: "\"I thought ChatGPT was the best thing ever created. Then I used Decodefy - I'm dumbfounded.\"",
     name: "Dani Humphreys, Drive By Media",
     industry: "FROM ChatGPT FAN TO \"DUMBFOUNDED\"",
     image: testimonialConsulting,
@@ -178,7 +178,7 @@ const TestimonialsB = () => (
   </section>
 );
 
-/* ───────────── CASE STUDY — MATT ───────────── */
+/* ───────────── CASE STUDY - MATT ───────────── */
 const MattStory = () => (
   <section className="section-padding bg-card/50">
     <div className="section-container">
@@ -194,7 +194,7 @@ const MattStory = () => (
           </div>
           <div className="w-full md:w-3/5 space-y-4 text-lg text-muted-foreground">
             <p>Matt Steadman runs a Yorkshire refrigeration business. Brilliant engineer. £200,000 in unfollowed quotes.</p>
-            <p>And a dream prospect — operations manager of a 156-store food chain, who'd ignored his emails for years.</p>
+            <p>And a dream prospect - operations manager of a 156-store food chain, who'd ignored his emails for years.</p>
             <blockquote className="border-l-4 border-accent pl-5 py-2 text-foreground font-medium italic">
               "I'm not somebody who can even compose an email sometimes. Something diplomatic takes me a while because I put too much thought into it."
             </blockquote>
@@ -307,7 +307,7 @@ const UsageSection = () => (
   </section>
 );
 
-/* ───────────── CASE STUDY — CATHERINE ───────────── */
+/* ───────────── CASE STUDY - CATHERINE ───────────── */
 const CatherineStory = () => (
   <section className="section-padding">
     <div className="section-container">
@@ -325,10 +325,10 @@ const CatherineStory = () => (
             <p>Catherine runs a drug and alcohol testing company in Beverley. September 22nd, her phone rings.</p>
             <p>The grant deadline just moved from 3 months to 8 days. Half the funding for expensive equipment her business desperately needed.</p>
             <blockquote className="border-l-4 border-accent pl-5 py-2 text-foreground font-medium italic">
-              "I'd seen the form and thought there's no way I could do that. Local government doesn't want to give money freely — they asked so many questions, all with 300-word limits."
+              "I'd seen the form and thought there's no way I could do that. Local government doesn't want to give money freely - they asked so many questions, all with 300-word limits."
             </blockquote>
             <p>She used Decodefy to write the entire application.</p>
-            <p>The surprise: <span className="text-foreground font-medium italic">"Some of the things it gave I hadn't actually thought about. It was giving me ideas — different slants to focus on, things I hadn't considered."</span></p>
+            <p>The surprise: <span className="text-foreground font-medium italic">"Some of the things it gave I hadn't actually thought about. It was giving me ideas - different slants to focus on, things I hadn't considered."</span></p>
             <p>Application submitted on time. <span className="text-foreground font-medium">"There's no way I would've done that in the time I had."</span></p>
             <p className="text-foreground font-medium">Would have been impossible otherwise.</p>
           </div>
@@ -367,7 +367,7 @@ const ClientsCreateSection = () => (
   </section>
 );
 
-/* ───────────── CASE STUDY — WILL ───────────── */
+/* ───────────── CASE STUDY - WILL ───────────── */
 const WillStory = () => (
   <section className="section-padding">
     <div className="section-container">
@@ -501,7 +501,7 @@ const WhatYouGet = () => (
           {[
             { icon: Users, title: "Master Brand Compass Session", desc: "One hour with Jon or Julie. Your expertise captured." },
             { icon: Zap, title: "Your System Built", desc: "James Cooke programmes your thinking. Takes 2–3 days." },
-            { icon: BookOpen, title: "Training", desc: "One hour creating real content. More than a copywriter delivers in a month — or your money back." },
+            { icon: BookOpen, title: "Training", desc: "One hour creating real content. More than a copywriter delivers in a month - or your money back." },
             { icon: Sparkles, title: "The System", desc: "Unlimited content creation. Content library. Workflow management." },
             { icon: HeadphonesIcon, title: "Support", desc: "Jon and Julie when you need them. Real people." },
             { icon: Users, title: "Local Legends Community", desc: "Monthly training. Network with other expert business owners." },
@@ -540,7 +540,7 @@ const teamMembers = [
   },
   {
     name: "Julie Gibson",
-    desc: "Realised after training fifty clients: great technology without support is expensive frustration. She's why clients succeed. Not just training — ongoing help when you're stuck.",
+    desc: "Realised after training fifty clients: great technology without support is expensive frustration. She's why clients succeed. Not just training - ongoing help when you're stuck.",
   },
 ];
 
@@ -589,7 +589,7 @@ const PricingB = () => (
           <p className="text-muted-foreground mb-6">Everything included</p>
           <p className="text-sm text-accent font-medium mb-6">Moving to £197/month soon. Lock in now, rate stays forever.</p>
           <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-            Book Your Session — £497
+            Book Your Session - £497
           </Button>
         </div>
         <div className="text-muted-foreground text-lg space-y-2 max-w-xl mx-auto">
@@ -681,9 +681,9 @@ const FooterB = () => (
           </motion.div>
           <motion.div {...fadeIn} className="p-8 rounded-2xl bg-background border border-primary/30 text-center">
             <h3 className="text-xl font-bold text-foreground mb-4">Just Start</h3>
-            <p className="text-muted-foreground mb-6">More content in your first session than a copywriter delivers in a month — or your money back.</p>
+            <p className="text-muted-foreground mb-6">More content in your first session than a copywriter delivers in a month - or your money back.</p>
             <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-              Book Your Session — £497
+              Book Your Session - £497
             </Button>
           </motion.div>
         </div>

@@ -12,7 +12,7 @@ const team = [
     name: "Jon Young",
     role: "The Lazy One",
     paras: [
-      "Twenty years helping local businesses. Built Decodefy because he got tired of watching brilliant people lose to louder competitors — and because he's lazy enough to believe there had to be a shortcut.",
+      "Twenty years helping local businesses. Built Decodefy because he got tired of watching brilliant people lose to louder competitors - and because he's lazy enough to believe there had to be a shortcut.",
       "He spent 3+ years figuring out how expert communicators actually think. Then he found a way to programme it into a system anyone can use. Turns out there was a shortcut. This is it.",
     ],
   },
@@ -27,7 +27,7 @@ const team = [
     name: "Julie Gibson",
     role: "The Reason Clients Succeed",
     paras: [
-      "Sales background. Operational precision. Not just onboarding — ongoing support. The person who makes sure you don't just get access, you get results. When you need help, Julie's who you call.",
+      "Sales background. Operational precision. Not just onboarding - ongoing support. The person who makes sure you don't just get access, you get results. When you need help, Julie's who you call.",
     ],
   },
 ];
