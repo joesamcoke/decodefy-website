@@ -31,8 +31,19 @@ const FooterSection = () => (
               Fifteen minutes. We'll show you real content created in Decodefy, explain what happens in a Master Brand Compass session, and answer whatever you're wondering.
             </p>
             <p className="text-muted-foreground text-sm mb-6">No pitch. No pressure. Just clarity.</p>
-            <Button variant="outline" size="lg" className="w-full h-12 rounded-full border-accent text-accent hover:bg-accent/10">
-              Book a 15-Minute Demo
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="w-full h-12 rounded-full border-accent text-accent hover:bg-accent/10"
+            >
+              <a
+                href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a 15-Minute Demo
+              </a>
             </Button>
           </motion.div>
           <motion.div
@@ -49,9 +60,19 @@ const FooterSection = () => (
             <p className="text-muted-foreground text-sm mb-6">
               More usable content in your first session than a copywriter delivers in a month — or your money back.
             </p>
-            <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-              Book Your Session — £495
-            </Button>
+        <Button
+          asChild
+          size="lg"
+          className="w-full h-14 text-base bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
+        >
+          <a
+            href="https://buy.stripe.com/4gM9AT9kn2wO3ff3kc3Ru0R"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book Your Session - £495
+          </a>
+        </Button>
           </motion.div>
         </div>
       </div>
@@ -73,8 +94,33 @@ const FooterSection = () => (
           </div>
           <img src={logo} alt="Decodefy" style={{ width: 120 }} className="mx-auto mb-8" />
           <div className="flex justify-center gap-4">
-            <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent/10">Book a Demo</Button>
-            <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">Book Your Session</Button>
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="rounded-full border-accent text-accent hover:bg-accent/10"
+            >
+              <a
+                href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Demo
+              </a>
+            </Button>
+            <Button
+              asChild
+              size="sm"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
+            >
+              <a
+                href="https://buy.stripe.com/4gM9AT9kn2wO3ff3kc3Ru0R"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book Your Session
+              </a>
+            </Button>
           </div>
           <div className="flex justify-center items-center gap-4 mt-8">
             <p className="text-muted-foreground text-xs">

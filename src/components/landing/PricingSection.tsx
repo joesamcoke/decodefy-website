@@ -44,8 +44,18 @@ const PricingSection = () => (
             </div>
           ))}
         </div>
-        <Button size="lg" className="w-full h-14 text-base bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-          Book Your Session — £495
+        <Button
+          asChild
+          size="lg"
+          className="w-full h-14 text-base bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
+        >
+          <a
+            href="https://buy.stripe.com/4gM9AT9kn2wO3ff3kc3Ru0R"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Book Your Session - £495
+          </a>
         </Button>
       </motion.div>
 

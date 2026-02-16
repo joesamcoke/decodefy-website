@@ -664,8 +664,19 @@ const FooterB = () => (
           <motion.div {...fadeIn} className="p-8 rounded-2xl bg-background border border-border text-center">
             <h3 className="text-xl font-bold text-foreground mb-4">See It First</h3>
             <p className="text-muted-foreground mb-6">Fifteen minutes. Real content. No pitch.</p>
-            <Button variant="outline" size="lg" className="w-full h-12 rounded-full border-accent text-accent hover:bg-accent/10">
-              Book a Demo
+            <Button
+              asChild
+              variant="outline"
+              size="lg"
+              className="w-full h-12 rounded-full border-accent text-accent hover:bg-accent/10"
+            >
+              <a
+                href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Book a Demo
+              </a>
             </Button>
           </motion.div>
           <motion.div {...fadeIn} className="p-8 rounded-2xl bg-background border border-primary/30 text-center">
@@ -704,7 +715,20 @@ const FooterB = () => (
       <div className="section-container text-center">
         <img src={logo} alt="Decodefy" style={{ width: 120 }} className="mx-auto mb-8" />
         <div className="flex justify-center gap-4 mb-8">
-          <Button variant="outline" size="sm" className="rounded-full border-accent text-accent hover:bg-accent/10">Book a Demo</Button>
+          <Button
+            asChild
+            variant="outline"
+            size="sm"
+            className="rounded-full border-accent text-accent hover:bg-accent/10"
+          >
+            <a
+              href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Book a Demo
+            </a>
+          </Button>
           <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">Book Your Session</Button>
         </div>
         <div className="flex justify-center items-center gap-4">
