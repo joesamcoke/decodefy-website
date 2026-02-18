@@ -588,8 +588,10 @@ const PricingB = () => (
           <p className="text-3xl font-bold text-foreground mb-1">£100<span className="text-lg font-normal text-muted-foreground">/month</span></p>
           <p className="text-muted-foreground mb-6">Everything included</p>
           <p className="text-sm text-accent font-medium mb-6">Moving to £197/month soon. Lock in now, rate stays forever.</p>
-          <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-            Book Your Session - £497
+          <Button asChild size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
+            <a href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo" target="_blank" rel="noreferrer">
+              Book Your Session - £497
+            </a>
           </Button>
         </div>
         <div className="text-muted-foreground text-lg space-y-2 max-w-xl mx-auto">
@@ -682,8 +684,10 @@ const FooterB = () => (
           <motion.div {...fadeIn} className="p-8 rounded-2xl bg-background border border-primary/30 text-center">
             <h3 className="text-xl font-bold text-foreground mb-4">Just Start</h3>
             <p className="text-muted-foreground mb-6">More content in your first session than a copywriter delivers in a month - or your money back.</p>
-            <Button size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
-              Book Your Session - £497
+            <Button asChild size="lg" className="w-full h-12 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
+              <a href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo" target="_blank" rel="noreferrer">
+                Book Your Session - £497
+              </a>
             </Button>
           </motion.div>
         </div>
@@ -704,8 +708,10 @@ const FooterB = () => (
             <p>The dyslexic holiday park owner doubles traffic and discovers he's a storyteller.</p>
             <p className="text-foreground font-medium text-xl">Your expertise doesn't need fixing. Your visibility does.</p>
           </div>
-          <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-base px-8 h-14">
-            Book Your Master Brand Compass Session
+          <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-base px-8 h-14">
+            <a href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo" target="_blank" rel="noreferrer">
+              Book Your Master Brand Compass Session
+            </a>
           </Button>
         </motion.div>
       </div>
@@ -729,7 +735,9 @@ const FooterB = () => (
               Book a Demo
             </a>
           </Button>
-          <Button size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">Book Your Session</Button>
+          <Button asChild size="sm" className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full">
+            <a href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo" target="_blank" rel="noreferrer">Book Your Session</a>
+          </Button>
         </div>
         <div className="flex justify-center items-center gap-4">
           <p className="text-muted-foreground text-xs">© {new Date().getFullYear()} Decodefy. All rights reserved.</p>
