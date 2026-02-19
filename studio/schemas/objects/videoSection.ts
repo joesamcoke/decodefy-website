@@ -18,8 +18,8 @@ export default defineType({
     {
       name: "videoUrl",
       title: "Video URL",
-      type: "url",
-      description: "URL to the demo video file",
+      type: "string",
+      description: "URL or path to the demo video (e.g. /videos/demo.mp4 or https://...)",
     },
     {
       name: "descriptions",
