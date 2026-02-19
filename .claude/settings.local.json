@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /e/apps/expert-voice add vercel.json)",
+      "Bash(git -C:*)",
+      "Bash(git -C /e/apps/expert-voice push)",
+      "WebFetch(domain:decodefy-website.vercel.app)",
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)"
+    ]
+  }
+}
