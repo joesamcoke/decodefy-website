@@ -61,8 +61,8 @@ export function useLandingPage() {
       if (!data) return defaultLandingPage;
       return data;
     },
-    staleTime: 5 * 60 * 1000, // 5 minutes
-    refetchOnWindowFocus: false,
+    staleTime: 1 * 60 * 1000, // 1 minute
+    refetchOnWindowFocus: true,
     placeholderData: defaultLandingPage,
   });
 }
