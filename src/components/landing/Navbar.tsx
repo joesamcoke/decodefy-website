@@ -11,7 +11,7 @@ const Navbar = () => (
         className="bg-accent text-accent-foreground hover:bg-accent/90 rounded-full"
       >
         <a
-          href="https://link.tryggr.app/widget/bookings/decodefy-15-minute-demo"
+          href="https://pages.decodefy.ai/waiting"
           target="_blank"
           rel="noreferrer"
         >
